@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ form.as_p }}
+<div class="p-t-15">
+    <button class="btn btn--radius-2 btn--blue" type="submit">Register</button>
+</div> <br>
+<h5>Already a registered Doctor?<br> <a href="{% url 'doc_login' %}">Click here</a> to Login.</h5>
+{% endblock %}
+

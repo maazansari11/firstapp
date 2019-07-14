@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+{% csrf_token %}
+<h2 class="title">Login</h2>
+<input class="input--style-4" name="username" placeholder="Username" type="text"><br><br>
+<input class="input--style-4" name="password" placeholder="Password" type="password">
+<div class="p-t-15">
+    <button class="btn btn--radius-2 btn--blue" type="submit">Login</button>
+</div><br>
+<h5> Not a Registered Doctor?<br> <a href="{% url 'doc_reg' %}">Click here</a> to register.</h5>
+{% endblock %}
